@@ -45,6 +45,9 @@ sub answer_and_connect
 
     $session->setVariable('secretary_user_waiting', 'false');
     fprint('inbound session: playback interrupted');
+
+    $session->sleep(200);
+    
     my $out_ses_uuid = $session->getVariable('secretary_out_ses_uuid');
     
     if( $session->getVariable('secretary_user_ready_to_talk') eq 'true' )
