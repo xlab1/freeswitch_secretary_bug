@@ -47,8 +47,8 @@
   <X-PRE-PROCESS cmd="set" data="outbound_caller_id=0000000000"/>
 
   <!-- various debug and defaults -->
-  <X-PRE-PROCESS cmd="set" data="call_debug=true"/>
-  <X-PRE-PROCESS cmd="set" data="console_loglevel=info"/>
+  <X-PRE-PROCESS cmd="set" data="call_debug=false"/>
+  <X-PRE-PROCESS cmd="set" data="console_loglevel=debug"/>
 
   
   <!-- if false or undefined, the destination number is included in presence NOTIFY dm:note.
