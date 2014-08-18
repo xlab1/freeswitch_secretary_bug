@@ -164,10 +164,7 @@ sub run_secretary
         $in_ses->execute('break');
     }
 
-    $out_ses->execute('park');
-    fprint('park finished');
-    $out_ses->hangup();
-    
+    $out_ses->execute('transfer', 'park inline');
     return;
 }
     
